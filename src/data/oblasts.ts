@@ -1,8 +1,5 @@
 import type { Oblast } from '../types'
 
-const img = (id: string) =>
-  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1200&q=80`
-
 export const oblasts: Oblast[] = [
   {
     id: 'chuy',
