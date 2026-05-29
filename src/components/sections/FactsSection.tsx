@@ -45,9 +45,6 @@ const factCards = [
 ]
 
 export function FactsSection() {
-  const totalPop = districts.reduce((s, d) => s + d.population, 0)
-  const totalArea = districts.reduce((s, d) => s + d.area, 0)
-
   return (
     <section id="facts" className="section-padding relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_50%,rgba(6,182,212,0.05),transparent_50%)] pointer-events-none" />
