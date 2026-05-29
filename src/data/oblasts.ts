@@ -14,7 +14,7 @@ export const oblasts: Oblast[] = [
     districtCount: 8,
     population: 985_430,
     area: 19_895,
-    image: img('1506905925346-21bda4d32df4'),
+    image: 'https://cdn-1.aki.kg/st_limon/6/1410526078_0.jpg',
     facts: [
       'Включает пригороды столицы Бишкека',
       'Известна сахарной свёклой и зерновым хозяйством',
@@ -32,7 +32,7 @@ export const oblasts: Oblast[] = [
     districtCount: 7,
     population: 1_414_670,
     area: 28_934,
-    image: img('https://central-asia.live/_next/image?url=https%3A%2F%2Fcentral-asia.live%2Fuploads%2Fosh-city-morning.jpg&w=3840&q=75'),
+    image: 'https://central-asia.live/_next/image?url=https%3A%2F%2Fcentral-asia.live%2Fuploads%2Fosh-city-morning.jpg&w=3840&q=75',
     facts: [
       'Самая населённая область страны',
       'Гора Сулейман-Тоо — объект ЮНЕСКО',
@@ -50,7 +50,7 @@ export const oblasts: Oblast[] = [
     districtCount: 8,
     population: 1_282_253,
     area: 32_418,
-    image: img('1519682337058-a94d519337bc'),
+    image: 'https://eltr.kg/wp-content/uploads/2023/06/zhalal-abad.png',
     facts: [
       'Лес Арсланбоб — крупнейший ореховый массив в мире',
       'ГЭС на реке Нарын',
@@ -68,7 +68,7 @@ export const oblasts: Oblast[] = [
     districtCount: 5,
     population: 505_901,
     area: 43_735,
-    image: img('1551632811-5629fbd28b38'),
+    image: 'https://avatars.mds.yandex.net/i?id=fde89587136bb4ad047f884ba13050f5c59b31ca-12471273-images-thumbs&n=13',
     facts: [
       'Озеро Иссык-Куль — второе по величине горное озеро в мире',
       'Никогда не замерзает полностью',
@@ -86,7 +86,7 @@ export const oblasts: Oblast[] = [
     districtCount: 5,
     population: 294_311,
     area: 44_160,
-    image: img('1506905925346-21bda4d32df4'),
+    image: 'https://sputnik.kg/img/07e4/08/1c/1049450913_0:0:2667:1500_1920x0_80_0_0_7769342c5d2673c3b90f4b8562fcee9a.jpg',
     facts: [
       'Самая высокогорная и малонаселённая область',
       'Исток реки Нарын и Сырдарьи',
@@ -104,7 +104,7 @@ export const oblasts: Oblast[] = [
     districtCount: 4,
     population: 274_029,
     area: 13_406,
-    image: img('1469472032213-31a4d753f1c1'),
+    image: 'https://central-asia.live/_next/image?url=https%3A%2F%2Fcentral-asia.live%2Fuploads%2Fmanas-kumbozu.jpg&w=3840&q=75',
     facts: [
       'Родина эпоса «Манас»',
       'Компактная по площади область',
@@ -122,7 +122,7 @@ export const oblasts: Oblast[] = [
     districtCount: 3,
     population: 558_652,
     area: 17_048,
-    image: img('1470071459604-3b5ec3a8fe05'),
+    image: 'https://central-asia.live/_next/image?url=https%3A%2F%2Fcentral-asia.live%2Fuploads%2Faygul-tash.jpg&w=3840&q=75',
     facts: [
       'Самая молодая область (с 1999 года)',
       'Знаменитые баткенские абрикосы',

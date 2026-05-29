@@ -60,8 +60,8 @@ export function FactsSection() {
       <div className="max-w-7xl mx-auto mb-16 grid grid-cols-2 lg:grid-cols-4 gap-6">
         {[
           { label: 'Районов', value: districts.length, suffix: '' },
-          { label: 'Население', value: Math.round(totalPop / 1000), suffix: 'K' },
-          { label: 'Площадь', value: Math.round(totalArea / 1000), suffix: 'K км²' },
+          { label: 'Население', value: 7, suffix: ' млн' },
+          { label: 'Площадь', value: 199951, suffix: ' км²' },
           { label: 'Областей', value: 7, suffix: '' },
         ].map((stat, i) => (
           <motion.div

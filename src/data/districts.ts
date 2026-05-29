@@ -8,58 +8,58 @@ const p = (seed: number): string => {
   const photos: Record<number, string> = {
 
     // ── ЧУЙСКАЯ ОБЛАСТЬ ─────────────────────────────────────
-    1:  'https://images.unsplash.com/photo-1506744038136-46273834b3fb?utm_source=chatgpt.com',
-    2:  'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?utm_source=chatgpt.com',
-    3:  'https://images.unsplash.com/photo-1464822759023-fed622ff2f3b?auto=format&fit=crop&w=800&q=80',
-    4:  'https://images.unsplash.com/photo-1510798831971-661eb04b3739?utm_source=chatgpt.com',
-    5:  'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?utm_source=chatgpt.com',
-    6:  'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?utm_source=chatgpt.com',
-    7:  'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?utm_source=chatgpt.com',
-    8:  'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?utm_source=chatgpt.com',
+    1:  'https://live.staticflickr.com/65535/50604921391_81f2e1b2df.jpg',
+    2:  'https://vesti.kg/media/k2/items/cache/f50c81f5252503cc2675a57665d7ec9a_Generic.jpg',
+    3:  'https://upload.wikimedia.org/wikipedia/commons/b/be/Kichi-Kemin_valley.jpg?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original',
+    4:  'https://upload.wikimedia.org/wikipedia/commons/f/f3/Ak-Suu_at_Jardy-Suu.jpg',
+    5:  'https://polarsteps.s3.amazonaws.com/u_361257/17c9656f-5e8e-44f5-87d9-a4ba0dbcfe78_8FB5C619-DCA9-4231-90B1-BCAC5868C6DE.jpg',
+    6:  'https://eltr.kg/wp-content/uploads/2024/01/sokuluk.jpg',
+    7:  'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/74/dc/d0/burana-tower-it-is-a.jpg?w=500&h=500&s=1',
+    8:  'https://sxodim.com/uploads/posts/2022/11/07/optimized/2c52ca3df490dd4e3b6cedf34afc02f0_1400x790-q-85.jpg',
 
     // ── ОШСКАЯ ОБЛАСТЬ ──────────────────────────────────────
     10: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?utm_source=chatgpt.com',
-    11: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?utm_source=chatgpt.com',
-    12: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?utm_source=chatgpt.com',
-    13: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?utm_source=chatgpt.com',
-    14: 'https://images.unsplash.com/photo-1448375240586-882707db888b?utm_source=chatgpt.com',
-    15: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?utm_source=chatgpt.com',
-    16: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?utm_source=chatgpt.com',
+    11: 'https://cdn-1.aki.kg/st_gallery/63/909963.72795c7b0bc6b7c2b831acdb6df56317.jpg',
+    12: 'https://chon-alai.gov.kg/wp-content/uploads/2025/07/0_10ee9c_b44ec43c_orig-1024x683-1.jpg',
+    13: 'https://eltr.kg/wp-content/uploads/2024/12/kara-kuldzha-850x560.jpg',
+    14: 'https://cdn-1.aki.kg/st_gallery/93/1181993.c314e2fc776f0c18c679ec3ba78fc7e4.jpg',
+    15: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Nooqat_from_the_north.jpg/330px-Nooqat_from_the_north.jpg',
+    16: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlSZwJVrY5PoVJ3mIaq3YC0u8LDhdv0ALEQw&s',
 
     // ── ЖАЛАЛ-АБАДСКАЯ ОБЛАСТЬ ──────────────────────────────
-    20: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?utm_source=chatgpt.com',
-    21: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?utm_source=chatgpt.com',
+    20: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Road_in_southern_Aksy_district.jpg',
+    21: 'https://eltr.kg/wp-content/uploads/2024/10/ala-bukajpeg.jpeg',
     22: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?utm_source=chatgpt.com',
-    23: 'https://images.unsplash.com/photo-1448375240586-882707db888b?utm_source=chatgpt.com',
-    24: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?utm_source=chatgpt.com',
-    25: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?utm_source=chatgpt.com',
-    26: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?utm_source=chatgpt.com',
-    27: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?utm_source=chatgpt.com',
+    23: 'https://mykgstan.com/uploads/images/00/00/14/2015/03/04/c26f9b.jpg',
+    24: 'https://static.tildacdn.com/tild6462-3137-4137-b066-383964393837/photo.jpg',
+    25: 'https://static.tildacdn.com/tild3634-3862-4737-a137-316238353036/photo.jpg',
+    26: 'https://cdn-1.aki.kg/127/.storage/limon2/images/september2/bcbf378321656a3ebae1a2e4d024aa50.jpg',
+    27: 'https://ru.kabar.kg/media/images/Toktogul-from-above-1024x682.max-1920x1080.format-webp.webp',
 
     // ── ИССЫК-КУЛЬСКАЯ ОБЛАСТЬ ──────────────────────────────
     30: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?utm_source=chatgpt.com',
-    31: 'https://images.unsplash.com/photo-1426604966848-d7adac402bff?utm_source=chatgpt.com',
-    32: 'https://images.unsplash.com/photo-1502082553048-f009c37129b9?utm_source=chatgpt.com',
-    33: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?utm_source=chatgpt.com',
-    34: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?utm_source=chatgpt.com',
+    31: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Bringing_the_sheep_home%2C_on_the_southern_shore_of_Issyk-Kul_%283968109583%29.jpg',
+    32: 'https://nomadsland.travel/sites/default/files/media/image/_mg_6049.jpg',
+    33: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Kirghizistant_2018_-_Borne_marquant_la_limite_du_district_de_Tong.jpg',
+    34: 'https://live.staticflickr.com/65535/49469330702_75fef501a8.jpg',
 
     // ── НАРЫНСКАЯ ОБЛАСТЬ ───────────────────────────────────
-    40: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?utm_source=chatgpt.com',
-    41: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?utm_source=chatgpt.com',
-    42: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?utm_source=chatgpt.com',
-    43: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?utm_source=chatgpt.com',
-    44: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?utm_source=chatgpt.com',
+    40: 'https://cdn-1.aki.kg/st_runews/0/1393870.1.1499746755.jpg',
+    41: 'https://cdn-1.aki.kg/cdn-st-0/qcz/3/1607026.79ac55b86275b92df6dd15b03856334b.jpg',
+    42: 'https://zhumgal.gov.kg/wp-content/uploads/2024/03/chaek.jpeg',
+    43: 'https://storage.ghost.io/c/c3/a6/c3a66635-73fd-4349-a382-8bf5c41013f8/content/images/2023/12/15-1.png',
+    44: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Fhx-f84ZgOaKfvreNaTJO-XsaV0pZ4dShQ&s',
 
     // ── ТАЛАССКАЯ ОБЛАСТЬ ───────────────────────────────────
-    50: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?utm_source=chatgpt.com',
+    50: 'https://data.kaktus.media/image/big/2025-06-02_11-22-53_398740.jpg',
     51: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?utm_source=chatgpt.com',
-    52: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?utm_source=chatgpt.com',
-    53: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?utm_source=chatgpt.com',
+    52: 'https://storage.ghost.io/c/c3/a6/c3a66635-73fd-4349-a382-8bf5c41013f8/content/images/2025/05/photo_5271996730512110600_y-2.jpg',
+    53: 'https://static.tildacdn.com/tild3336-3264-4831-b639-353837393466/photo.jpg',
 
     // ── БАТКЕНСКАЯ ОБЛАСТЬ ──────────────────────────────────
     60: 'https://images.unsplash.com/photo-1448375240586-882707db888b?utm_source=chatgpt.com',
-    61: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?utm_source=chatgpt.com',
-    62: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?utm_source=chatgpt.com',
+    61: 'https://cdn-1.aki.kg/cdn-st-0/qgF/E/3130419.a4db9615d6da096816117ae7229558df.jpg',
+    62: 'https://map.kg/uploads/posts/2024-02/leilek-25.webp',
   }
 
   const url = photos[seed]

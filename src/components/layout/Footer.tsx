@@ -67,10 +67,9 @@ export function Footer() {
             transition={{ delay: 0.2, duration: 1, ease: easeLuxury }}
           >
             <h4 className="text-[10px] font-semibold uppercase tracking-[0.45em] text-emerald-500/70 mb-6">
-              Контакты
+              Контакты для заказа подобных сайтов
             </h4>
-            <p className="text-slate-500 text-sm mb-2 font-light">info@kyrgyzstan-regions.kg</p>
-            <p className="text-slate-500 text-sm mb-8 font-light">+996 312 00 00 00</p>
+            <p className="text-slate-500 text-sm mb-8 font-light">+996 221 16 07 08</p>
             <div className="flex gap-3">
               {socials.map((s) => (
                 <motion.a
