@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "description": "Mock API data for Kyrgyzstan regions website",
+    "totalDistricts": 40,
+    "totalOblasts": 7,
+    "lastUpdated": "2026-05-28"
+  },
+  "endpoints": {
+    "oblasts": "/data/oblasts.json",
+    "districts": "/data/districts.json",
+    "gallery": "/data/gallery.json"
+  },
+  "stats": {
+    "totalPopulation": 5315086,
+    "largestByPopulation": { "id": "kara-suu", "name": "Кара-Сууйский", "population": 348645 },
+    "smallestByPopulation": { "id": "chatkal", "name": "Чаткальский", "population": 21154 },
+    "largestByArea": { "id": "at-bashy", "name": "Ат-Башинский", "area": 15120 },
+    "highestAltitude": { "id": "chong-alay", "name": "Чон-Алайский", "altitude": 4500 }
+  }
+}
