@@ -20,6 +20,11 @@ export function DistrictDetailPage() {
   const imgY = useTransform(scrollYProgress, [0, 1], ['0%', '25%'])
   const contentOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0])
 
+  // ✅ Исправление: всегда прокручиваем наверх при открытии страницы
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, [id])
+
   useEffect(() => {
     if (district) {
       document.title = `${district.name} — Районы Кыргызстана`
