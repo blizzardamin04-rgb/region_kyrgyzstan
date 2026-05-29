@@ -33,11 +33,11 @@ export function DistrictFiltersBar({ filters, onChange, resultCount }: DistrictF
           onChange={(e) =>
             onChange({ ...filters, oblastId: e.target.value as OblastId | 'all' })
           }
-          className="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-emerald-500/50 min-w-[180px]"
+          className="px-4 py-3 rounded-xl bg-[#0d1b2e] border border-white/10 text-white focus:outline-none focus:border-emerald-500/50 min-w-[180px]"
         >
-          <option value="all">Все области</option>
+          <option value="all" className="bg-[#0d1b2e] text-white">Все области</option>
           {oblasts.map((o) => (
-            <option key={o.id} value={o.id}>
+            <option key={o.id} value={o.id} className="bg-[#0d1b2e] text-white">
               {o.name}
             </option>
           ))}
@@ -47,12 +47,12 @@ export function DistrictFiltersBar({ filters, onChange, resultCount }: DistrictF
           onChange={(e) =>
             onChange({ ...filters, sort: e.target.value as Filters['sort'] })
           }
-          className="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-emerald-500/50 min-w-[180px]"
+          className="px-4 py-3 rounded-xl bg-[#0d1b2e] border border-white/10 text-white focus:outline-none focus:border-emerald-500/50 min-w-[180px]"
         >
-          <option value="alpha">По алфавиту</option>
-          <option value="population-desc">Население ↓</option>
-          <option value="population-asc">Население ↑</option>
-          <option value="area-desc">Площадь ↓</option>
+          <option value="alpha" className="bg-[#0d1b2e] text-white">По алфавиту</option>
+          <option value="population-desc" className="bg-[#0d1b2e] text-white">Население ↓</option>
+          <option value="population-asc" className="bg-[#0d1b2e] text-white">Население ↑</option>
+          <option value="area-desc" className="bg-[#0d1b2e] text-white">Площадь ↓</option>
         </select>
       </div>
       <p className="mt-3 text-xs text-slate-500">

@@ -1,50 +1,72 @@
 import type { District, SiteFacts } from '../types'
 
-const p = (seed: number) => {
-  const m: Record<number,string> = {
-    "1": "1506905925346-21bda4d32df4",
-    "2": "1500534314209-a25ddb2bd429",
-    "3": "1519931698410-3ff1c9a85f00",
-    "4": "1474564862823-9e354e60bfe4",
-    "5": "1464071335422-30a9987a4f26",
-    "6": "1513735492246-483525079686",
-    "7": "1548625361-58a9c5f8f5f5",
-    "8": "1441974231531-c6227db76b6e",
-    "10": "1464822759023-fed622ff2f3b",
-    "11": "1508193638397-1c4234db14d8",
-    "12": "1519682337058-a94d519337bc",
-    "13": "1501854140801-50d01698950b",
-    "14": "1534067783941-51c9c23ecedc",
-    "15": "1604665515776-5b57285b3a15",
-    "16": "1519931698410-3ff1c9a85f00",
-    "20": "1469472032213-31a4d753f1c1",
-    "21": "1473448912268-2022ce9509d8",
-    "22": "1513735492246-483525079686",
-    "23": "1441974231531-c6227db76b6e",
-    "24": "1500534314209-a25ddb2bd429",
-    "25": "1464071335422-30a9987a4f26",
-    "26": "1519931698410-3ff1c9a85f00",
-    "27": "1544366921-894cf7a4c157",
-    "30": "1551632811-5629fbd28b38",
-    "31": "1507003211169-0a1dd7228f2d",
-    "32": "1506905925346-21bda4d32df4",
-    "33": "1551632811-5629fbd28b38",
-    "34": "1508193638397-1c4234db14d8",
-    "40": "1519682337058-a94d519337bc",
-    "41": "1528360983277-13d401cdc186",
-    "42": "1500534314209-a25ddb2bd429",
-    "43": "1528360983277-13d401cdc186",
-    "44": "1464822759023-fed622ff2f3b",
-    "50": "1469472032213-31a4d753f1c1",
-    "51": "1441974231531-c6227db76b6e",
-    "52": "1464071335422-30a9987a4f26",
-    "53": "1500534314209-a25ddb2bd429",
-    "60": "1474564862823-9e354e60bfe4",
-    "61": "1519931698410-3ff1c9a85f00",
-    "62": "1469472032213-31a4d753f1c1"
-}
-  const id = m[seed] ?? '1506905925346-21bda4d32df4'
-  return `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=800&q=80`
+// ============================================================
+// ФОТО РАЙОНОВ — вставляй свои ссылки вместо заглушек
+// Формат: НОМЕР: 'ТВОЯ_ССЫЛКА', // Район — Область
+// ============================================================
+const p = (seed: number): string => {
+  const photos: Record<number, string> = {
+
+    // ── ЧУЙСКАЯ ОБЛАСТЬ ─────────────────────────────────────
+    1:  'https://images.unsplash.com/photo-1506744038136-46273834b3fb?utm_source=chatgpt.com',
+    2:  'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?utm_source=chatgpt.com',
+    3:  'https://images.unsplash.com/photo-1464822759023-fed622ff2f3b?auto=format&fit=crop&w=800&q=80',
+    4:  'https://images.unsplash.com/photo-1510798831971-661eb04b3739?utm_source=chatgpt.com',
+    5:  'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?utm_source=chatgpt.com',
+    6:  'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?utm_source=chatgpt.com',
+    7:  'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?utm_source=chatgpt.com',
+    8:  'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?utm_source=chatgpt.com',
+
+    // ── ОШСКАЯ ОБЛАСТЬ ──────────────────────────────────────
+    10: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?utm_source=chatgpt.com',
+    11: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?utm_source=chatgpt.com',
+    12: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?utm_source=chatgpt.com',
+    13: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?utm_source=chatgpt.com',
+    14: 'https://images.unsplash.com/photo-1448375240586-882707db888b?utm_source=chatgpt.com',
+    15: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?utm_source=chatgpt.com',
+    16: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?utm_source=chatgpt.com',
+
+    // ── ЖАЛАЛ-АБАДСКАЯ ОБЛАСТЬ ──────────────────────────────
+    20: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?utm_source=chatgpt.com',
+    21: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?utm_source=chatgpt.com',
+    22: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?utm_source=chatgpt.com',
+    23: 'https://images.unsplash.com/photo-1448375240586-882707db888b?utm_source=chatgpt.com',
+    24: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?utm_source=chatgpt.com',
+    25: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?utm_source=chatgpt.com',
+    26: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?utm_source=chatgpt.com',
+    27: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?utm_source=chatgpt.com',
+
+    // ── ИССЫК-КУЛЬСКАЯ ОБЛАСТЬ ──────────────────────────────
+    30: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?utm_source=chatgpt.com',
+    31: 'https://images.unsplash.com/photo-1426604966848-d7adac402bff?utm_source=chatgpt.com',
+    32: 'https://images.unsplash.com/photo-1502082553048-f009c37129b9?utm_source=chatgpt.com',
+    33: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?utm_source=chatgpt.com',
+    34: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?utm_source=chatgpt.com',
+
+    // ── НАРЫНСКАЯ ОБЛАСТЬ ───────────────────────────────────
+    40: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?utm_source=chatgpt.com',
+    41: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?utm_source=chatgpt.com',
+    42: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?utm_source=chatgpt.com',
+    43: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?utm_source=chatgpt.com',
+    44: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?utm_source=chatgpt.com',
+
+    // ── ТАЛАССКАЯ ОБЛАСТЬ ───────────────────────────────────
+    50: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?utm_source=chatgpt.com',
+    51: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?utm_source=chatgpt.com',
+    52: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?utm_source=chatgpt.com',
+    53: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?utm_source=chatgpt.com',
+
+    // ── БАТКЕНСКАЯ ОБЛАСТЬ ──────────────────────────────────
+    60: 'https://images.unsplash.com/photo-1448375240586-882707db888b?utm_source=chatgpt.com',
+    61: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?utm_source=chatgpt.com',
+    62: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?utm_source=chatgpt.com',
+  }
+
+  const url = photos[seed]
+  if (!url || url === 'ВСТАВЬ_ССЫЛКУ') {
+    return 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80'
+  }
+  return url
 }
 
 const mk = (

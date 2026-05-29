@@ -32,7 +32,7 @@ export const oblasts: Oblast[] = [
     districtCount: 7,
     population: 1_414_670,
     area: 28_934,
-    image: img('1464822759023-fed622ff2f3b'),
+    image: img('https://central-asia.live/_next/image?url=https%3A%2F%2Fcentral-asia.live%2Fuploads%2Fosh-city-morning.jpg&w=3840&q=75'),
     facts: [
       'Самая населённая область страны',
       'Гора Сулейман-Тоо — объект ЮНЕСКО',
